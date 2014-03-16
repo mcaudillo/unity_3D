@@ -192,10 +192,6 @@ public class GameManager : MonoBehaviour {
 		smartFox.Send(new SetUserVariablesRequest(userVariables));
 	}
 	
-	public void ChangePlayerModel(int numModel) {
-		SpawnLocalPlayer(numModel, smartFox.MySelf.GetVariable("mat").GetIntValue() );
-	}
-	
 	//----------------------------------------------------------
 	// Private player helper methods
 	//----------------------------------------------------------

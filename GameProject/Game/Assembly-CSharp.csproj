@@ -52,7 +52,6 @@
      <Compile Include="Assets\Scripts\PlayerController.cs" />
      <Compile Include="Assets\Scripts\SimpleRemoteInterpolation.cs" />
      <Compile Include="Assets\Scripts\SmartFoxConnection.cs" />
-     <Compile Include="Assets\Scripts\Trigger.cs" />
      <None Include="Assets\Standard Assets\Skyboxes\ skybox info.txt" />
  <Reference Include="Assets\Plugins\SmartFox2X">
  <HintPath>Assets\Plugins\SmartFox2X.dll</HintPath>

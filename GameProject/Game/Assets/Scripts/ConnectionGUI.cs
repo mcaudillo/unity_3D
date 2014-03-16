@@ -102,7 +102,7 @@ public class ConnectionGUI : MonoBehaviour {
 			
 		} else {
 			RoomSettings settings = new RoomSettings("Game Room");
-			settings.MaxUsers = 2;
+			settings.MaxUsers = 40;
 		 
 			smartFox.Send(new CreateRoomRequest(settings, true));
 		}
@@ -161,7 +161,7 @@ public class ConnectionGUI : MonoBehaviour {
 		
 		// Draw the box
 		GUILayout.BeginArea(new Rect(panelPosX, panelPosY, panelWidth, panelHeight));
-		GUILayout.Box ("Chuen Run for Jade.", GUILayout.ExpandWidth(true), GUILayout.ExpandHeight(true));
+		GUILayout.Box ("Chuen Creator", GUILayout.ExpandWidth(true), GUILayout.ExpandHeight(true));
 		GUILayout.BeginVertical();
 		GUILayout.BeginArea(new Rect(20, 25, panelWidth-40, panelHeight-60), GUI.skin.customStyles[0]);
 		
@@ -202,7 +202,7 @@ public class ConnectionGUI : MonoBehaviour {
 		
 		// Draw the box
 		GUILayout.BeginArea(new Rect(panelPosX, panelPosY, panelWidth, panelHeight));
-		GUILayout.Box ("Chuen Creation", GUILayout.ExpandWidth(true), GUILayout.ExpandHeight(true));
+		GUILayout.Box ("Create your Chuen!", GUILayout.ExpandWidth(true), GUILayout.ExpandHeight(true));
 		GUILayout.BeginVertical();
 		GUILayout.BeginArea(new Rect(20, 25, panelWidth-40, panelHeight-60), GUI.skin.customStyles[0]);
 		
@@ -210,7 +210,7 @@ public class ConnectionGUI : MonoBehaviour {
 		GUILayout.FlexibleSpace();
 			
 		GUILayout.BeginHorizontal();
-		GUILayout.Label("Chuen Name: ");
+		GUILayout.Label("Chuen name: ");
 		username = GUILayout.TextField(username, 25, GUILayout.MinWidth(200));
 		GUILayout.EndHorizontal();
 
@@ -219,8 +219,8 @@ public class ConnectionGUI : MonoBehaviour {
 		// Center login button
 		GUILayout.BeginHorizontal();
 		GUILayout.FlexibleSpace();		
-		if (GUILayout.Button("Create my Chuen")  || (Event.current.type == EventType.keyDown && Event.current.character == '\n')) {
-			Debug.Log("Sending login request");
+		if (GUILayout.Button("Create Chuen")  || (Event.current.type == EventType.keyDown && Event.current.character == '\n')) {
+			Debug.Log("Sending Chuen Creation");
 			smartFox.Send(new LoginRequest(username, "", zone));
 		}
 		GUILayout.FlexibleSpace();

@@ -29,8 +29,9 @@ public class GameGUI : MonoBehaviour {
 		GUILayout.BeginArea(new Rect(0, 0, 150, 400));
 		GUILayout.BeginVertical();
 		
-		GUILayout.Label("Follow the music to get the Jade and win.");
-		GUILayout.Label("Color of your Chuen");
+		GUILayout.Label("Follow the Music to find the jade and WIN!");
+
+		GUILayout.Label("Chuen color");
 		
 		if (GUILayout.Button("Blue")) {
 			gameManager.ChangePlayerMaterial(0);
