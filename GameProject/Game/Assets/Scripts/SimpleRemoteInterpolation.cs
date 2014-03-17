@@ -3,7 +3,7 @@ using System.Collections;
 
 public class SimpleRemoteInterpolation : MonoBehaviour {
 
-	// Extremely simple and dumb interpolation script
+	//interpolation script
 	private Vector3 desiredPos;
 	private Quaternion desiredRot;
 	

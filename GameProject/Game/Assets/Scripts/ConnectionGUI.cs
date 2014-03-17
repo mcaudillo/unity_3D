@@ -102,7 +102,7 @@ public class ConnectionGUI : MonoBehaviour {
 			
 		} else {
 			RoomSettings settings = new RoomSettings("Game Room");
-			settings.MaxUsers = 40;
+			settings.MaxUsers = 2;
 		 
 			smartFox.Send(new CreateRoomRequest(settings, true));
 		}
